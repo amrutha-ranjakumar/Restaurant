@@ -10,10 +10,13 @@ function Header() {
   const dispatch = useDispatch()
   return (
     <>
-      <Navbar bg="primary" data-bs-theme="dark">
+      <Navbar bg="success" data-bs-theme="white">
         <Container>
-          <Navbar.Brand href="#home"><Link to={'/'} style={{textDecoration:"none",color:"white"}}>FOOD CIRCLE</Link></Navbar.Brand>
-          <input type="text" className='form-control w-25 ' 
+          <Navbar.Brand href="#home">
+          <i class="fa-solid fa-utensils"></i>
+            
+            <Link to={'/'} style={{textDecoration:"none",color:"white",marginLeft:"10px"}}>FOOD CIRCLE</Link></Navbar.Brand>
+          <input type="text" className='form-control w-25 me-5' 
           onChange={(e)=>dispatch(search(e.target.value))}
           />
           <img

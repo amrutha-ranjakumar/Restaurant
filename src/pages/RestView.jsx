@@ -25,7 +25,7 @@ function RestView() {
           <img
 
             width={'100%'} className='rounded'
-            src={selectedRestaurant[0]?.photograph} alt="" />
+            src={selectedRestaurant[0]?.photograph} alt="" /> //  filler method retun array must inculde [0]
         </Col>
 
         <Col md={7} lg={7}><Col />
@@ -50,6 +50,8 @@ function RestView() {
         <Col md={1} lg={1}></Col>
 
       </Row>
+
+      
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>operating hourse</Modal.Title>

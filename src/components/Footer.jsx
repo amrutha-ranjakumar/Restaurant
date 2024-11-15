@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <>
-    <div className='d-flex justify-content-center alig-items-center mt-5 bg-primary'>
+    <div className='d-flex justify-content-center alig-items-center mt-5 bg-success'>
       <div className='footer d-flex align-item-center justfy-content-evenly mt-5 '>
         <div className='website'style={{width:"400px"}}>
         <i class="fa-solid fa-utensils">   FOOD CIRCLE</i>

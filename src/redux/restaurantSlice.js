@@ -14,8 +14,9 @@ import axios from "axios";
 export const fechResturant = createAsyncThunk('restaurantList/fechResturant', () => {
     const result = axios.get('/restaurant.json').then(response => response.data);
 
-    return result;
-
+    return result;  
+    
+    //normal call  or static data call 
 })
 
 const restaurantSlice = createSlice({

@@ -14,12 +14,12 @@ function Home() {
   console.log(allRestaurant);
   return (
     <>
-      <Row>
+      <Row className='mt-5   '>
         {
           allRestaurant?.length > 0 ?
             allRestaurant.map((restaurant) => (
-              <Col className='px-5 py-3 ' sm={6} md={4} lg={4}>
-                <RestCard restaurant={restaurant} />
+              <Col className='px-5 py-4   ' sm={6} md={3} lg={3}>
+                <RestCard restaurant={restaurant}  />
               </Col>
             )) :
             <p>no Restaurant found</p>
